@@ -1,4 +1,4 @@
-import { Phone } from "lucide-react"
+import { Phone, Github } from "lucide-react"
 
 export function Footer() {
   return (
@@ -13,22 +13,23 @@ export function Footer() {
           </div>
 
           <nav className="flex flex-wrap justify-center gap-6 text-sm text-muted-foreground">
-            <a href="#" className="transition-colors hover:text-foreground">
+            <a 
+              href="https://github.com/luca-artur/webapp-phone-number-parser" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="flex items-center gap-1.5 transition-colors hover:text-foreground"
+            >
+              <Github className="h-4 w-4" />
+              GitHub
+            </a>
+            <a href="/privacy" className="transition-colors hover:text-foreground">
               Privacy Policy
             </a>
-            <a href="#" className="transition-colors hover:text-foreground">
+            <a href="/terms" className="transition-colors hover:text-foreground">
               Terms of Service
             </a>
-            <a href="#" className="transition-colors hover:text-foreground">
-              Contact
-            </a>
-            <a
-              href="https://apify.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="transition-colors hover:text-foreground"
-            >
-              Powered by Apify
+            <a href="/cookies" className="transition-colors hover:text-foreground">
+              Cookie Policy
             </a>
           </nav>
         </div>
